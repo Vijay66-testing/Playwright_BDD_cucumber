@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "test:dev": "cross-env NODE_ENV=dev cucumber-js features/Login.feature",
+    "test:qa": "cross-env NODE_ENV=qa cucumber-js features/Login.feature",
+    "test:prod": "cross-env NODE_ENV=prod cucumber-js features/Login.feature"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "@playwright/test": "^1.49.1",
+    "cucumber": "^6.0.7",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.49.0",
+    "playwright-cucumber": "^1.0.15"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
